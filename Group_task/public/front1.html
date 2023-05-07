@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car Parking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 10px;
+            flex-basis: 50%;
+        }
+
+        .card h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .card button {
+            background-color: #8700e1;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .card button:hover {
+            opacity: 0.8;
+        }
+
+        .status {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #8700e1;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <h2>Slot 1</h2>
+                <p id="car1" class="status" style="text-align: right;"> </p>
+                <p id="car7" class="status" style="text-align: right;"> </p>
+            
+                <a href="book_slot1.html">
+                    <button>Book</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <h2>Slot 2</h2>
+                <p class="status" style="text-align: right; color: green;">Car is parked</p>
+                <a href="book_slot2.html">
+                    <button>Book</button>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>Slot 3</h2>
+                <p class="status" style="text-align: right; color: green">Car is parked</p>
+                <a href="book_slot3.html">
+                    <button>Book</button>
+                </a>
+            </div>
+            <div class="card">
+                <h2>Slot 4</h2>
+                <p class="status" style="text-align: right; color: green">Car is parked</p>
+                <a href="book_slot4.html">
+                    <button>Book</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

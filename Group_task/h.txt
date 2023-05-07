@@ -1,0 +1,3 @@
+mongoose.connect('mongodb+srv://mohnish4774be21:Mohnish2003@cluster0.tsbaxfy.mongodb.net/task', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true });

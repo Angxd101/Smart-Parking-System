@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding-top: 60px;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 20%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+
+
+
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="navbar.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#">Smart Parking System</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="front1.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a
+                        href="https://www.canva.com/design/DAFc_oe6nXs/pcMS8ttL7aUaw3HiAJIF6g/edit?utm_content=DAFc_oe6nXs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Description</a>
+                </li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p> Welcome to SmartPark, the intelligent parking system that's changing the way we park. At SmartPark, we're
+            passionate about creating innovative solutions to everyday problems. We believe that parking shouldn't be a
+            hassle,
+            and that's why we've developed the most affordable
+            and convenient smart parking system on the market. We're committed to providing our customers with the
+            highest level of service and support. </p>
+        <p>So why choose SmartPark? Our system is designed to save you time, money, and hassle. With our advanced
+            sensors and real-time data, you'll never waste time circling for a spot again. Plus, our system is fully
+            automated, which means no more tickets or manual payments.</p>
+        <p>We're committed to providing our customers with the highest level of service and support. Whether you're a
+            driver looking for a spot, or a property owner looking to manage your parking facilities, we're here to
+            help. Our team is always available to answer your questions and provide support whenever you need it.</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <center>
+                    <img src="Payas.jpeg" alt="Payas" style="width:50%">
+                </center>
+                <div class="container">
+                    <h2>Payas Paul</h2>
+                    <p class="title">UX Designer and Tester</p>
+                    <p>As a UX Developer and Tester, I layed down an initial design for our project and ensured that
+                        websites and applications are user-friendly.
+                        I also conducted user testing to gather feedback on the user interface and experience.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <center>
+                    <img src="Satyam.jpeg" alt="Satyam Raina" style="width:50%">
+                </center>
+                <div class="container">
+                    <h2>Satyam Raina</h2>
+                    <p class="title">API Integration Specialist</p>
+
+                    <p>As an API Integration Specialist, I ensured seamless integration between
+                        different systems using APIs. I work carefully to understand the requirements of the integration
+                        and implement solutions that meet those needs.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="card">
+                <center>
+                    <img src="mohnish.jpeg" alt="mohnish" style="width: 50%">
+                </center>
+                <div class="container">
+                    <h2>Mohnish Sharma</h2>
+                    <p class="title">Database Manager</p>
+
+                    <p>As a Database Manager, I oversaw the implementation,
+                        and maintenance of databases to support the needs of the project by ensuring that the databases
+                        are optimized for performance, security, and scalability. </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <center>
+                    <img src="Angad.jpeg" alt="Angad" style="width: 50%;">
+                    <h2>Angad</h2>
+                    <p class="title">Backend Developer</p>
+                </center>
+
+                <div class="container">
+                    <p>As a Back-End Developer, my role was to develop and maintain the server-side of websites and
+                        applications.
+                        , and other members of the team to ensure that the back-end of a website or application is
+                        running smoothly.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <center>
+                    <img src="Agastya.jpeg" alt="Agastya Sharma" style="width: 50%">
+                    <div class="container">
+                        <h2>Agastya Sharma</h2>
+                        <p class="title">Frontend Developer</p>
+                </center>
+                <div class="container">
+                    <p>As a Front End Developer, my role was to build the user interface and user experience for
+                        websites and applications.
+                        I worked closely with the team to ensure that the user interface is visually appealing, easy to
+                        use, and functional.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="navbar.js"></script>
+</body>
+
+</html>

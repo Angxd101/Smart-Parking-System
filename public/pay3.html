@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Payment Method</title>
+</head>
+
+<body>
+    <div class="container">
+        <h6>Checkout</h6>
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+        <h1>Payment Method</h1>
+        <form action="/">
+            <label for="country">Country
+                <select name="country" id="country">
+                    <option value="india">india</option>
+                </select>
+            </label>
+            <label for="name">Name
+                <input type="text" id="name" name="name" required />
+            </label>
+            <div class="float">
+                <label for="amount">Amount
+                    <br>
+                    <input type="text" id="amount" name="amount" maxlength="4" required>
+                </label>
+            </div>
+            <input class="butt" type="button" id="button" value="Pay Now" onclick="Makepayment3()">
+        </form>
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="app.js"></script>
+        <script src="pay.js"></script>
+        <script src="script.js"></script>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
